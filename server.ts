@@ -1,6 +1,7 @@
-import { Application, AppOptions } from "https://deno.land/x/denotrain@v0.5.0/mod.ts";
-import { host, port } from "./config.ts";
+import { Application, AppOptions } from "./debs.ts";
+import { host, port } from "./configuration.ts";
 import routes from "./routes.ts";
+import "./database.ts";
 
 const appOptions: AppOptions = {
   hostname: host,
